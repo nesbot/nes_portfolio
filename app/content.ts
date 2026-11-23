@@ -173,19 +173,66 @@ export const experience: Company[] = [
   },
 ];
 
-export const clients: { name: string; url?: string; note?: string }[] = [
-  { name: "Nestlé", note: "via Accenture" },
-  { name: "Macy’s", note: "via Accenture" },
-  { name: "Red Bull", note: "via Accenture" },
-  { name: "Telstra", note: "via Accenture" },
-  { name: "Expedia Group", url: "https://www.expediagroup.com" },
-  { name: "Taylor Swift Official Store", url: "https://store.taylorswift.com" },
-  { name: "Kauai Coffee", url: "https://kauaicoffee.com" },
-  { name: "Coldwell Banker Preferred" },
-  { name: "U.S. Department of Transportation (RITA)" },
-  { name: "Jessop Jewelers" },
-  { name: "MaraNatha Foods" },
-  { name: "Broker’s International" },
+export type Client = { name: string; note?: string; url?: string };
+export type ClientGroup = { company: string; clients: Client[] };
+
+export const clientGroups: ClientGroup[] = [
+  {
+    company: "Mira Commerce",
+    clients: [
+      { name: "Aimpoint" },
+      { name: "Trijicon" },
+      { name: "Nightforce Optics" },
+      { name: "Griot’s Garage" },
+    ],
+  },
+  {
+    company: "Togetherwork",
+    clients: [
+      { name: "National Veterinary Associates" },
+      { name: "Pet Paradise" },
+      { name: "Movement Climbing Gyms" },
+      { name: "Central Rock Gym" },
+    ],
+  },
+  {
+    company: "Miva",
+    clients: [
+      { name: "Taylor Swift Official Store" },
+      { name: "Kauai Coffee", note: "Massimo Zanetti Beverage" },
+      { name: "Segafredo Zanetti", note: "Massimo Zanetti Beverage" },
+      { name: "Hills Bros. Coffee", note: "Massimo Zanetti Beverage" },
+      { name: "Chock full o’Nuts", note: "Massimo Zanetti Beverage" },
+      { name: "Farmer Bros.", note: "Coffee brands" },
+      { name: "NHS Skate Direct", note: "Santa Cruz, Independent, OJ Wheels & more" },
+      { name: "BTO Sports" },
+      { name: "XDP", note: "Xtreme Diesel Performance" },
+      { name: "Three Rivers Archery" },
+      { name: "Borsheims", note: "A Berkshire Hathaway company" },
+      { name: "The Paper Store" },
+      { name: "Rally House" },
+      { name: "Cintas First Aid" },
+    ],
+  },
+  {
+    company: "Pacific",
+    clients: [{ name: "Expedia Group" }],
+  },
+  {
+    company: "Santex",
+    clients: [
+      { name: "Nestlé", note: "via Accenture" },
+      { name: "Macy’s", note: "via Accenture" },
+      { name: "Red Bull", note: "via Accenture" },
+      { name: "Telstra", note: "via Accenture" },
+      { name: "Vistage" },
+      { name: "Coldwell Banker Preferred" },
+      { name: "U.S. Dept. of Transportation (RITA)" },
+      { name: "Jessop Jewelers" },
+      { name: "MaraNatha Foods" },
+      { name: "Broker’s International" },
+    ],
+  },
 ];
 
 export const talks: Item[] = [
