@@ -173,11 +173,19 @@ export const experience: Company[] = [
   },
 ];
 
-export const work: Item[] = [
-  { title: "Kauai Coffee", subtitle: "Online store", dates: "2024", url: "https://kauaicoffee.com" },
-  { title: "Taylor Swift — Reputation", subtitle: "Official merchandise store launch", dates: "2017" },
-  { title: "Coldwell Banker Preferred", subtitle: "Custom Drupal real estate search, Philadelphia", dates: "2010" },
-  { title: "SantexQ", subtitle: "SaaS project & task management", dates: "2007 — 2010" },
+export const clients: { name: string; url?: string; note?: string }[] = [
+  { name: "Nestlé", note: "via Accenture" },
+  { name: "Macy’s", note: "via Accenture" },
+  { name: "Red Bull", note: "via Accenture" },
+  { name: "Telstra", note: "via Accenture" },
+  { name: "Expedia Group", url: "https://www.expediagroup.com" },
+  { name: "Taylor Swift Official Store", url: "https://store.taylorswift.com" },
+  { name: "Kauai Coffee", url: "https://kauaicoffee.com" },
+  { name: "Coldwell Banker Preferred" },
+  { name: "U.S. Department of Transportation (RITA)" },
+  { name: "Jessop Jewelers" },
+  { name: "MaraNatha Foods" },
+  { name: "Broker’s International" },
 ];
 
 export const talks: Item[] = [

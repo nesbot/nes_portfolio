@@ -2,7 +2,7 @@ import Image from "next/image";
 import {
   profile,
   experience,
-  work,
+  clients,
   talks,
   education,
   certifications,
@@ -118,8 +118,21 @@ export default function Home() {
         </ul>
       </Section>
 
-      <Section title="Selected work">
-        <ItemList items={work} />
+      <Section title="Clients & brands">
+        <ul className={s.clients}>
+          {clients.map((c) => (
+            <li key={c.name}>
+              {c.url ? (
+                <a href={c.url} target="_blank" rel="noreferrer">
+                  {c.name}
+                </a>
+              ) : (
+                c.name
+              )}
+              {c.note && <span className={s.note}>{c.note}</span>}
+            </li>
+          ))}
+        </ul>
       </Section>
 
       <Section title="Speaking">
