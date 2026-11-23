@@ -238,6 +238,7 @@ export const clientGroups: ClientGroup[] = [
 export const talks: Item[] = [
   { title: "Panelist", subtitle: "Camp Miva 2022 · Rancho Bernardo Inn, San Diego", dates: "2022" },
   { title: "Choosing the Right Ecommerce Ecosystem", subtitle: "MivaCon 2019 · San Diego", dates: "2019" },
+  { title: "Miva Merchant 9 Admin: Optimizing Your Daily Workflow", subtitle: "MivaCon 2016 · La Jolla, San Diego", dates: "2016" },
   { title: "Mobile Design and UX Trends", subtitle: "MivaCon 2016 · La Jolla, San Diego", dates: "2016" },
 ];
 
