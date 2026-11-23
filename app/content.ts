@@ -116,14 +116,6 @@ export const experience: Company[] = [
           "Coordinated Professional Services engagements, including solution scoping, statements of work, and quarterly business reviews.",
         ],
       },
-      {
-        title: "Account Manager",
-        dates: "2015 — 2018",
-        bullets: [
-          "Managed some of Miva’s most strategic enterprise ecommerce accounts, driving retention, growth, and long-term partnerships.",
-          "Owned complex ecommerce implementations, coordinating cross-functional teams to deliver solutions and keep projects moving.",
-        ],
-      },
     ],
   },
   {
@@ -137,6 +129,20 @@ export const experience: Company[] = [
         bullets: [
           "Managed the Expedia Group account across North America and Australia/New Zealand, supporting six lines of business.",
           "Coordinated SEO, digital marketing, and advertising initiatives with project managers, designers, and copywriters.",
+        ],
+      },
+    ],
+  },
+  {
+    name: "Miva, Inc.",
+    url: "https://www.miva.com",
+    roles: [
+      {
+        title: "Account Manager",
+        dates: "2015 — 2018",
+        bullets: [
+          "Managed some of Miva’s most strategic enterprise ecommerce accounts, driving retention, growth, and long-term partnerships.",
+          "Owned complex ecommerce implementations, coordinating cross-functional teams to deliver solutions and keep projects moving.",
         ],
       },
     ],

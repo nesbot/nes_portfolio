@@ -81,28 +81,24 @@ export default function Home() {
 
       <Section title="Experience">
         <ul className={s.list}>
-          {experience.map((co) => (
-            <li key={co.name} className={s.company}>
-              {co.roles.map((r, i) => (
+          {experience.map((co, ci) => (
+            <li key={co.name + ci} className={s.company}>
+              {co.roles.map((r) => (
                 <div key={r.title + r.dates} className={s.row}>
                   <span className={s.date}>{r.dates}</span>
                   <div>
                     <div className={s.title}>
                       {r.title}
-                      {i === 0 && (
-                        <>
-                          <span className={s.at}> at </span>
-                          {co.url ? (
-                            <a href={co.url} target="_blank" rel="noreferrer">
-                              {co.name}
-                            </a>
-                          ) : (
-                            co.name
-                          )}
-                        </>
+                      <span className={s.at}> at </span>
+                      {co.url ? (
+                        <a href={co.url} target="_blank" rel="noreferrer">
+                          {co.name}
+                        </a>
+                      ) : (
+                        co.name
                       )}
                     </div>
-                    {r.location && i === 0 && <div className={s.sub}>{r.location}</div>}
+                    {r.location && <div className={s.sub}>{r.location}</div>}
                     {r.bullets && (
                       <ul className={s.bullets}>
                         {r.bullets.map((b) => (
