@@ -273,7 +273,7 @@ export const certifications: Item[] = [
 
 export const volunteering: Item[] = [
   { title: "Operations Manager", subtitle: "NEST CoWork · San Diego, CA", dates: "2024", url: "https://www.nestcowork.io" },
-  { title: "Reading Room Assistant", subtitle: "Museum of Contemporary Art San Diego", dates: "2015" },
-  { title: "Internet Start-up Mentor", subtitle: "Incutex Company Builder", dates: "2014 — 2015" },
-  { title: "Mobile Pet Adoption", subtitle: "San Diego Humane Society", dates: "2012" },
+  { title: "Reading Room Assistant", subtitle: "Museum of Contemporary Art San Diego", dates: "2015", url: "https://www.mcasd.org" },
+  { title: "Internet Start-up Mentor", subtitle: "Incutex Company Builder", dates: "2014 — 2015", url: "https://www.incutex.com.ar" },
+  { title: "Mobile Pet Adoption", subtitle: "San Diego Humane Society", dates: "2012", url: "https://www.sdhumane.org" },
 ];
